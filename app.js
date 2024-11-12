@@ -63,6 +63,13 @@ function refreshC(){
     listC.innerHTML = listbd;
 }
 
+let date = document.getElementById("date");
+let day = new Date();
+date.innerHTML=day;
+
+
+
+
 // function writeTextfile() {
 //     let taskJSON = JSON.stringify(tasklist, null, 2); 
 //     let completeJSON = JSON.stringify(completelist, null, 2);
