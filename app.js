@@ -1,10 +1,12 @@
+
+
 let list = document.getElementById("li");
 let listC = document.getElementById("liC");
 let tasklist = [];
 let completelist = [];
 
 function add(){
-   
+    // writeTextfile();
     let task = document.getElementById("task").value;
     let taskd = document.getElementById("taskd").value;
 
@@ -60,4 +62,21 @@ function refreshC(){
 
     listC.innerHTML = listbd;
 }
+
+// function writeTextfile() {
+//     let taskJSON = JSON.stringify(tasklist, null, 2); 
+//     let completeJSON = JSON.stringify(completelist, null, 2);
+
+//     try {
+
+//         fs.writeFileSync('tasklist.json', taskJSON);
+//         console.log("Task list saved to tasklist.json");
+
+   
+//         fs.writeFileSync('completelist.json', completeJSON);
+//         console.log("Complete list saved to completelist.json");
+//     } catch (error) {
+//         console.error("Error writing files: ", error);
+//     }
+// }
 
